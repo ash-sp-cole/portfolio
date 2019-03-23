@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="javascript.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
+
+    </head>
+
+
+<body></body>
+    <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">   Ash Cole</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="https://github.com/ash-sp-cole">Portfolio <i class="fas fa-book-open"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ash-cole-9b7050183/">Linkedin <i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    
+        <section class="home">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+               
+           
+                <div class="container">  
+                        <form id="contact" action="" method="post">
+                          <h3>Welcome</h3>
+                          <h4>Feel free to reach out for more information</h4>
+                          <fieldset>
+                            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                          </fieldset>
+                          <fieldset>
+                            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                          </fieldset>
+                          <fieldset>
+                            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                          </fieldset>
+                          <fieldset>
+                            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                          </fieldset>
+                          <fieldset>
+                            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                          </fieldset>
+                          <fieldset>
+                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                          </fieldset>
+                         
+                        </form>
+                      </div>
+        </section>
+  
+       
+    
+    <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+    
+            $('.navTrigger').click(function () {
+        $(this).toggleClass('active');
+        console.log("Clicked menu");
+        $("#mainListDiv").toggleClass("show_list");
+        $("#mainListDiv").fadeIn();
+    
+    });
+    
+        </script>
+
+    </body>
+
+
+
+</html>
+
