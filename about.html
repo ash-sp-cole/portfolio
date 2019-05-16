@@ -13,7 +13,21 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
 
+#cards{
+  
+  text-align: center;
+ float: center;
+
+
+
+}
+
+
+
+
+</style>
 
 </head>
 
@@ -48,33 +62,47 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
 
-    <div class="jumbotron jumbotron-fluid" id=aboutMe>
-        <div class="container">
-            <h1 class="display-4">About Me</h1>
-            <p class="lead">Having grown up building computers and learning how DOS works, since a child I have been
-                interested in computer science. My natural progression was to build websites at an early age, using Html
-                and CSS. Since then I have continued this passion to branch out into full web development, with a deep
-                passion for aesthetics and user interface, creating frameworks that can help bridge the division between
-                interaction and functionality.
-                Art has always been an interest of mine, and my path in web development has encouraged me to see the
-                digital world as a new medium.</p>
-                <br>
-                <img src="screen7.png" class="rounded float-left" alt="..." id="pics">
-                <img src="liri.png" class="rounded float-right" alt="..." id="pics">
-                <hr>
-               
-           
-            
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true" id="cards">
+
+            <ul class="uk-slider-items uk-grid">
+                <li class="uk-width-1-2">
+                    <div class="uk-panel">
+                        <img src="logo.png" alt="">
+                        <div class="uk-position-center uk-panel"><h1>1</h1></div>
+                    </div>
+                </li>
+                <li class="uk-width-1-2">
+                    <div class="uk-panel">
+                        <img src="logo2.png" alt="">
+                        <div class="uk-position-center uk-panel"><h1>2</h1></div>
+                    </div>
+                </li>
+                <li class="uk-width-1-2">
+                    <div class="uk-panel">
+                        <img src="logo.png" alt="">
+                        <div class="uk-position-center uk-panel"><h1>3</h1></div>
+                    </div>
+                </li>
+                <li class="uk-width-1-2">
+                    <div class="uk-panel">
+                        <img src="logo2.png" alt="">
+                        <div class="uk-position-center uk-panel"><h1>4</h1></div>
+                    </div>
+                </li>
+                <li class="uk-width-1-2">
+                    <div class="uk-panel">
+                        <img src="images/photo3.jpg" alt="">
+                        <div class="uk-position-center uk-panel"><h1>5</h1></div>
+                    </div>
+                </li>
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
         </div>
-    </div>
   
 
 </section>
@@ -95,15 +123,12 @@
             $('.nav').removeClass('affix');
         }
     });
-
     $('.navTrigger').click(function () {
         $(this).toggleClass('active');
         console.log("Clicked menu");
         $("#mainListDiv").toggleClass("show_list");
         $("#mainListDiv").fadeIn();
-
     });
-
 </script>
 
 </body>
